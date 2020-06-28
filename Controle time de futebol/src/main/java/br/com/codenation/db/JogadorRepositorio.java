@@ -6,21 +6,11 @@ import br.com.codenation.exceptions.TimeNaoEncontradoException;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
-public class JogadorRepositorio {
+public class JogadorRepositorio extends EntityRepository<Jogador> {
     private final DbService dbService;
     private final TimeRepositorio timeRepositorio;
-
-    private Stream<Jogador> FiltraLista(Predicate<Jogador> predicado)
-    {
-        return  dbService
-                    .getJogadores()
-                    .stream()
-                    .filter(predicado);
-    }
 
     public Jogador BuscaJogador(Long idJogador){
         ArrayList<Jogador> jogadores;
@@ -34,6 +24,7 @@ public class JogadorRepositorio {
     }
 
     public JogadorRepositorio(DbService dbService, TimeRepositorio timeRepositorio) {
+        super(dbService.getJogadores());
         this.dbService = dbService;
         this.timeRepositorio = timeRepositorio;
     }
@@ -41,7 +32,7 @@ public class JogadorRepositorio {
 
     public void AdicionarJogador(Jogador jogador){
         try {
-            Jogador getJogador = BuscaJogador(jogador.getId());
+            BuscaJogador(jogador.getId());
             throw new IdentificadorUtilizadoException();
         } catch (JogadorNaoEncontradoException ex) {
             timeRepositorio.BuscarNomeTime(jogador.getIdTime());
@@ -78,9 +69,7 @@ public class JogadorRepositorio {
 
     public ArrayList<Long> Top(int take)
     {
-        return (ArrayList<Long>) dbService
-                .getJogadores()
-                .stream()
+        return (ArrayList<Long>) GetListStream()
                 .sorted((jogador1, jogador2) -> Long.compare(jogador2.getId(), jogador1.getId()))
                 .limit(take)
                 .map(Jogador::getId).collect(Collectors.toList());

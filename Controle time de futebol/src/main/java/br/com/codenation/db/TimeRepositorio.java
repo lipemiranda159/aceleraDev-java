@@ -3,25 +3,19 @@ package br.com.codenation.db;
 import br.com.codenation.exceptions.IdentificadorUtilizadoException;
 import br.com.codenation.exceptions.TimeNaoEncontradoException;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
-public class TimeRepositorio {
+public class TimeRepositorio extends EntityRepository<Time> {
     private final DbService dbService;
     private final JogadorRepositorio jogadorRepositorio;
-    private Stream<Time> FiltraLista(Predicate<Time> predicado)
-    {
-        return dbService
-                .getTimes().stream().filter(predicado);
-    }
+
 
     private Time BuscaTime(Long idTime){
         ArrayList<Time> times;
-        times = (ArrayList<Time>) FiltraLista(j -> j.getId().equals(idTime)).collect(Collectors.toList());
+        times = (ArrayList<Time>) FiltraLista(j -> j.getId().equals(idTime))
+                .collect(Collectors.toList());
         if (times.size() > 0) {
             return times.get(0);
         } else {
@@ -37,6 +31,7 @@ public class TimeRepositorio {
     }
 
     public TimeRepositorio(DbService dbService) {
+        super(dbService.getTimes());
         this.dbService = dbService;
         this.jogadorRepositorio = new JogadorRepositorio(dbService, this);
     }
