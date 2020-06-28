@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.com.codenation.DesafioMeuTimeApplicationTest" tests="27" skipped="0" failures="0" errors="0" timestamp="2020-06-27T04:53:44" hostname="felipe-pc" time="0.066">
+  <properties/>
+  <testcase name="deveBuscarNomeJogador" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.037"/>
+  <testcase name="deveIncluirTimeQueNaoExiste" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.004"/>
+  <testcase name="aoBuscarTopJogadoresdeveRetonarListaVaziaAoBuscarQuandoNenhumJogadorExistir" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.002"/>
+  <testcase name="deveLevantarExceptionAoBuscarNomeDeJogadorQueNaoExiste" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.001"/>
+  <testcase name="deveLevantarExceptionQuandoBuscaNomeDeTimeInexistente" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.0"/>
+  <testcase name="deveLevantarExceptionAoBuscarSalarioDeJogadorInexistente" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.001"/>
+  <testcase name="deveBuscarJogadorComMaiorSalarioDoTime" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.003"/>
+  <testcase name="aoAdicionarJogadorDeveLevantarExceptionQuandoTimeNaoExiste" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.0"/>
+  <testcase name="deveLevantarExceptionAoBuscarCapitaoDeTimeInexistente" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.001"/>
+  <testcase name="deveBuscarTodosOsTimesExistentes" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.0"/>
+  <testcase name="deveRetornarSalarioDoJogador" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.0"/>
+  <testcase name="deveLevantarExceptionAoDefinirJogadorInexistenteComoCapitao" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.0"/>
+  <testcase name="deveIncluirJogadorNaoExistenteEmTimeJaExistente" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.001"/>
+  <testcase name="deveDefinirCapitao" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.0"/>
+  <testcase name="deveLevantarExceptionAoBuscarJogadorMaisVelhoDeTimeInexistente" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.0"/>
+  <testcase name="deveLevantarExceptionQuandoOTimeJaExiste" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.001"/>
+  <testcase name="deveBuscarJogadorMaisVelho" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.002"/>
+  <testcase name="deveBuscarJogadoresDoTime" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.001"/>
+  <testcase name="aoBuscarTimesDeveRetornarUmaListaVaziaQuandoNenhumTimeExiste" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.001"/>
+  <testcase name="deveLevantarExceptionCasoTimeNaoTenhaCapitao" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.0"/>
+  <testcase name="deveBuscarMelhorJogadorDoTime" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.002"/>
+  <testcase name="deveBuscarNomeTime" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.0"/>
+  <testcase name="deveRetonarTopJogadores" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.001"/>
+  <testcase name="deveLevantarExceptionAoBuscarJogadoresDeTimeInexistente" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.0"/>
+  <testcase name="aoAdicionarJogadorDeveLevantarExceptionQuandoJogadorJaExiste" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.0"/>
+  <testcase name="deveLevantarExceptionAoBuscarMelhorJogadorDeTimeInexistente" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.0"/>
+  <testcase name="deveLevantarExceptionAoBuscarJogadorComMaiorSalarioDeTimeInexistente" classname="br.com.codenation.DesafioMeuTimeApplicationTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
