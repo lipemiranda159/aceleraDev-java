@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.challenge.testes.ReflectionTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-07-05T05:10:23" hostname="felipe-pc" time="0.039">
+  <properties/>
+  <testcase name="whenSubtract" classname="com.challenge.testes.ReflectionTest" time="0.028"/>
+  <testcase name="shouldHaveAddMethod" classname="com.challenge.testes.ReflectionTest" time="0.004"/>
+  <testcase name="whenResultWithoutAnnotation" classname="com.challenge.testes.ReflectionTest" time="0.001"/>
+  <testcase name="shouldHaveSubtractMethod" classname="com.challenge.testes.ReflectionTest" time="0.0"/>
+  <testcase name="whenResult" classname="com.challenge.testes.ReflectionTest" time="0.0"/>
+  <testcase name="shouldHaveResultMethod" classname="com.challenge.testes.ReflectionTest" time="0.001"/>
+  <testcase name="whenSubtractAllWithouAnnotation" classname="com.challenge.testes.ReflectionTest" time="0.0"/>
+  <testcase name="whenAdd" classname="com.challenge.testes.ReflectionTest" time="0.0"/>
+  <testcase name="whenAddWithouAnnotation" classname="com.challenge.testes.ReflectionTest" time="0.0"/>
+  <testcase name="shouldImplementsCalculavel" classname="com.challenge.testes.ReflectionTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
